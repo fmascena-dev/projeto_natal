@@ -28,7 +28,7 @@
         <div
           v-for="(photo, index) in duplicatedPhotos"
           :key="index"
-          class="flex-shrink-0 w-72 h-72 md:w-80 md:h-80 rounded-2xl overflow-hidden group"
+          class="shrink-0 w-72 h-72 md:w-80 md:h-80 rounded-2xl overflow-hidden group"
         >
           <img
             :src="photo.src"
