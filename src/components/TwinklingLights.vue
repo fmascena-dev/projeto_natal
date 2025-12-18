@@ -40,6 +40,7 @@ onMounted(() => {
   lights.value = Array.from({ length: 30 }, (_, i) => ({
     id: i,
     left: Math.random() * 100,
+    right: Math.random() * 130,
     top: Math.random() * 100,
     color: colors[Math.floor(Math.random() * colors.length)]!,
     delay: Math.random() * 2,
