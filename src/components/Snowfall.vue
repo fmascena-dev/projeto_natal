@@ -33,10 +33,10 @@ const snowflakes = ref<Snowflake[]>([])
 onMounted(() => {
   snowflakes.value = Array.from({ length: 50 }, (_, i) => ({
     id: i,
-    left: Math.random() * 100,
-    size: Math.random() * 4 + 2,
+    left: Math.random() * 110,
+    size: Math.random() * 8 + 2,
     duration: Math.random() * 10 + 10,
-    delay: Math.random() * 10,
+    delay: Math.random() * 5,
     opacity: Math.random() * 0.6 + 0.4,
   }))
 })

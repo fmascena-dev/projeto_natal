@@ -1,6 +1,5 @@
 <template>
   <section class="py-20 background relative overflow-hidden">
-    <!-- Decorative elements -->
     <div class="absolute top-10 left-10 text-6xl opacity-60 animate-float">
       🎅
     </div>
@@ -22,23 +21,21 @@
         Assista e sinta o espírito natalino
       </p>
 
-      <!-- Video -->
       <div class="max-w-4xl mx-auto">
         <div
           class="relative aspect-video rounded-2xl overflow-hidden glass-card"
         >
-          <!-- Capa -->
           <div
             v-if="!isPlaying"
             class="absolute inset-0 flex items-center justify-center background-card-secondary
-                   bg-gradient-to-br from-bg-gradient-red
+                   bg-linear-to-br from-bg-gradient-red
                    to-bg-gradient-gold"
           >
             <button
               @click="isPlaying = true"
               class="w-20 h-20 md:w-24 md:h-24 rounded-full
-                     bg-gradient-gold flex items-center justify-center
-                     transition-all duration-300 hover:scale-110 glow-gold"
+                     background-gold hover:cursor-pointer flex items-center justify-center
+                     transition-all duration-300 hover:-translate-y-3 glow-gold"
             >
               <Play
                 class="w-8 h-8 md:w-10 md:h-10
@@ -47,7 +44,6 @@
             </button>
           </div>
 
-          <!-- Iframe -->
           <iframe
             v-else
             class="absolute inset-0 w-full h-full"
@@ -59,13 +55,12 @@
         </div>
       </div>
 
-      <!-- Christmas facts -->
-      <div class="flex items-center justify-center flex-wrap gap-6 mt-16 mb-16">
+      <div class="flex items-center justify-center flex-wrap gap-6 mt-16 mb-16 select-none">
         <div
           v-for="(item, index) in facts"
           :key="index"
           class="glass-card p-6 w-md text-center background-card
-                 hover:scale-105 transition-transform duration-300"
+                 hover:-translate-y-3 transition-transform duration-300"
           :style="{ animationDelay: `${index * 0.2}s` }"
         >
           <span class="text-5xl mb-4 block">{{ item.icon }}</span>

@@ -10,12 +10,10 @@
     </div>
 
     <div class="relative">
-      <!-- Fade esquerda -->
       <div
         class="absolute left-0 top-0 bottom-0 w-32 md:w-64 bg-linear-to-r from-[#310101] to-transparent z-10 pointer-events-none"
       />
 
-      <!-- Fade direita -->
       <div
         class="absolute right-0 top-0 bottom-0 w-32 md:w-64 bg-linear-to-l from-[#310101] to-transparent z-10 pointer-events-none"
       />
@@ -64,9 +62,7 @@ const photos: Photo[] = [
   { src: christmasOrnaments, alt: 'Enfeites de Natal 2' },
 ]
 
-// duplica para efeito infinito
 const duplicatedPhotos = computed(() => [...photos, ...photos])
-
 const scrollPosition = ref(0)
 const containerRef = ref<HTMLDivElement | null>(null)
 let animationId: number | null = null

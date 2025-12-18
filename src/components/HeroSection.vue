@@ -12,18 +12,15 @@ onMounted(() => {
 
 <template>
   <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
-    <!-- Background Image -->
     <div
       class="absolute inset-0 bg-cover bg-center bg-no-repeat"
       :style="{ backgroundImage: `url(${christmasHero})` }"
     >
-      <div class="absolute inset-0 bg-gradient-to-br from-bg-gradient-red to-bg-gradient-gold" />
+      <div class="absolute inset-0 bg-linear-to-br from-bg-gradient-red to-bg-gradient-gold" />
     </div>
 
-    <!-- Twinkling Lights -->
     <TwinklingLights />
 
-    <!-- Content -->
     <div
       class="relative z-10 text-center px-4 transition-all duration-1000"
       :class="isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'"
@@ -59,7 +56,6 @@ onMounted(() => {
       </div>
     </div>
 
-    <!-- Scroll Indicator -->
     <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
       <div class="w-6 h-10 border-2 border-white/80 rounded-full flex justify-center">
         <div class="w-1 h-3 bg-white/80 rounded-full mt-2 animate-pulse" />
