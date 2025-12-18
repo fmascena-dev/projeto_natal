@@ -33,13 +33,13 @@ onMounted(() => {
       </div>
 
       <h1
-        class="font-display text-6xl md:text-7xl lg:text-8xl font-bold mb-6 text-red-500 drop-shadow-[0_0_10px_rgba(255,0,0,0.9)]"
+        class="font-family-christmas text-6xl md:text-7xl lg:text-9xl font-bold mb-6 text-[#FF0000] drop-shadow-[0_0_10px__rgba(255,0,0,0.9)]"
       >
-        Feliz <span class="text-[#FFFF00] drop-shadow-[0_0_10px_rgba(255,255,0,0.9)]">Natal</span>
+        Feliz <span class="text-[#FF0000]">Natal</span>
       </h1>
 
       <p
-        class="text-xl md:text-2xl text-[#FFF]/80 max-w-2xl mx-auto mb-8 font-sans"
+        class="text-xl md:text-2xl text-[#FFFFFF] max-w-2xl mx-auto mb-8 font-family-sans"
       >
         Que a magia do Natal preencha seu coração com amor, paz e alegria
       </p>
@@ -56,7 +56,7 @@ onMounted(() => {
 
         <a
           href="#cartao"
-          class="px-8 py-4 bg-yellow-400 hover:bg-yellow-500
+          class="px-8 py-4 bg-[#FFFF00] hover:bg-[#FFFF00]/80
                  text-black rounded-full font-bold
                  transition-all duration-300 text-[20px]"
         >

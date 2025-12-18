@@ -1,10 +1,10 @@
 <template>
-  <section id="galeria" class="py-20 overflow-hidden bg-[#221919]">
+  <section id="galeria" class="py-20 overflow-hidden bg-[#f3f3f3]">
     <div class="container mx-auto px-4 mb-12">
-      <h2 class="font-display text-red-500 text-4xl md:text-5xl font-bold text-center mb-4">
-        Galeria de <span class="text-[#FFFF00]">Momentos</span>
+      <h2 class="font-display text-[#FF0000] text-4xl md:text-6xl font-bold text-center mb-4 drop-shadow-[0_0_10px_rgba(255,0,0,0.9)]">
+        Galeria de <span class="text-[#ff0000] ">Momentos</span>
       </h2>
-      <p class="text-[#FFF]/80 text-center text-xl max-w-2xl mx-auto">
+      <p class="text-red-500 text-center text-2xl max-w-2xl mx-auto font-bold">
         Momentos especiais que tornam o Natal mágico
       </p>
     </div>
@@ -12,12 +12,12 @@
     <div class="relative">
       <!-- Fade esquerda -->
       <div
-        class="absolute left-0 top-0 bottom-0 w-32 md:w-64 bg-linear-to-r from-[#221919] to-transparent z-10 pointer-events-none"
+        class="absolute left-0 top-0 bottom-0 w-32 md:w-64 bg-linear-to-r from-[#f3f3f3] to-transparent z-10 pointer-events-none"
       />
 
       <!-- Fade direita -->
       <div
-        class="absolute right-0 top-0 bottom-0 w-32 md:w-64 bg-linear-to-l from-[#221919] to-transparent z-10 pointer-events-none"
+        class="absolute right-0 top-0 bottom-0 w-32 md:w-64 bg-linear-to-l from-[#f3f3f3] to-transparent z-10 pointer-events-none"
       />
 
       <div
