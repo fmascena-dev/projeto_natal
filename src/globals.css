@@ -4,6 +4,10 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
+  --family-sans: 'JetBrains Mono';
+  --family-display: 'Playfair Display';
+  --family-christmas: 'Pinyon Script';
+
   --background: hsl(0 15% 8%);
   --foreground: 40 30% 95%;
   --card: 0 20% 12%;
@@ -101,10 +105,13 @@
 
 @layer base {
   body {
-    font-family: 'Lora', serif;
+    font-family: 'JetBrains Mono';
   }
 
-  h1,
+  h1 {
+    font-family: var(--family-christmas);
+  }
+
   h2,
   h3,
   h4,
